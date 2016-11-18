@@ -8,19 +8,27 @@ import JudgesPanel from './JudgesPanel';
 import NavHeader from './NavHeader';
 import RecapPanel from './RecapPanel';
 import SchedulePanel from './SchedulePanel';
-
+import Prizes from './Prizes';
 
 export default class LandingPage extends Base{
 	render(){
 		return ( 
-			<div className='LandingPage'>
+			<div className='LandingPage column'>
                 <NavHeader/>
+                <div className='landing_splash'/>
                 <CodeWindowOverlay/>
                 <InfoPanel/>
-                <SchedulePanel/>
-                <JudgesPanel/>
-                <CriteriaPanel/>
-                <RecapPanel/>
+                <div className='row'>
+                    <Prizes/>
+                    <SchedulePanel/>
+                </div>
+                
+                {
+                    // <JudgesPanel/>
+                    // <CriteriaPanel/>
+                    // <RecapPanel/>   
+                }
+               
             </div>
 		);
 	}

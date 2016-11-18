@@ -11,20 +11,9 @@ export default class NavHeader extends Base{
     render(){
         return ( 
             <div className='NavHeader row'>
-                <div className='column'>
-                    <h6>Miami</h6>
-                    <h6 className='bitcoin'>Bitcoin</h6>
-                    <h6>Hackathon</h6>
-                </div>
-                <div className='flex'/>
-                <div
-                    className='learn-more column'
-                    onClick={this.handleLearnMore}
-                >
-                    <div className='flex'/>
-                    <p className='flex-center'>Learn More</p>
-                    <div className='line flex-center'/>
-                    <div className='flex'/>
+                <div className='learn column center'>
+                    <span>Learn More</span>
+                    <span className='learn_bar'/>
                 </div>
                 <RubyLink route='registration'>
                     <Button>REGISTER</Button>

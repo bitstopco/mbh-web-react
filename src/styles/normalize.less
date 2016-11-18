@@ -12,12 +12,13 @@ body {
     width: @windowWidth;
     overflow-x:hidden;
     overflow-y: hidden;
-    height: @windowHeight;
+    
 }
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    overflow: scroll;
 }
 a {
     color:inherit;
@@ -31,9 +32,9 @@ a {
 }
 
 .app {
-    height: @windowHeight;
+    height: 100%;
     font-family: Avenir;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 article,

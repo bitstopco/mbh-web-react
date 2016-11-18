@@ -6,9 +6,7 @@ import Base from './Base';
 export default class CodeWindowOverlay extends Base{
     render(){
         return ( 
-            <div className='CodeWindowOverlay'>
-                <p>CodeWindowOverlay</p>
-            </div>
+            <div className='CodeWindowOverlay'/>
         );
     }
     
