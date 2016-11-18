@@ -1,0 +1,1 @@
+export const RUBY_ROOT = 'http://www.miamibitcoinhackathon.com/'
