@@ -1,17 +1,32 @@
 .NavHeader {
     right: 20px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-right: 30px;
     position: relative;
     z-index: 100;
 
+    .title_container{
+        margin-left: 80px;
+    }
+    .title{
+        width: 100px;
+        font-size: 40px;
+        line-height: 40px; 
+    }
+    .pink{
+        color: #ff0098;
+    }
+    .blue{
+        color: #7cfde7;
+    }
     .learn{
         align-items: center;
         color: white;
         margin-right: 50px;
+        justify-content: center;
         .learn_bar{
-            bottom: 1px;
+            margin-top: 20px;
             width: 100px;
             
             height:2px; 
@@ -22,6 +37,6 @@
     }
 
     .button{
-        height: 150px;
+        height: 140px;
     }
 }
