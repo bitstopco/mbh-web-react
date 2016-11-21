@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --inline ",
-    "start": "node server;",
+    "start": "sudo NODE_ENV=production node server;",
     "deploy": "./node_modules/webpack/bin/webpack.js -p --config webpack.config.production.js"
   },
   "babel": {
