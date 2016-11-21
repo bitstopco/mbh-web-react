@@ -23,7 +23,7 @@ export default class NavHeader extends Base{
                     </div>
                     <RubyLink route='registration'>
                         <Button>REGISTER</Button>
-                    </RubyLink>  
+                    </RubyLink>
                 </div>
                 
             </div>
