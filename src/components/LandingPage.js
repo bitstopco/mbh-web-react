@@ -13,6 +13,7 @@ import Location from './Location';
 import CountDown from './CountDown';
 import Bitcoin from './Bitcoin';
 import Sponsors from './Sponsors';
+
 export default class LandingPage extends Base{
 	render() {
 		return ( 
@@ -35,9 +36,10 @@ export default class LandingPage extends Base{
                 </div>
                 <Bitcoin/>
                 <Sponsors />
+                <CriteriaPanel/>
                 {
                     // <JudgesPanel/>
-                    // <CriteriaPanel/>
+                    
                     // <RecapPanel/>   
                 }
                
