@@ -11,7 +11,8 @@ import SchedulePanel from './SchedulePanel';
 import Prizes from './Prizes';
 import Location from './Location';
 import CountDown from './CountDown';
-
+import Bitcoin from './Bitcoin';
+import Sponsors from './Sponsors';
 export default class LandingPage extends Base{
 	render() {
 		return ( 
@@ -24,15 +25,16 @@ export default class LandingPage extends Base{
                 <CountDown/>
                 <div className='row'>
                     <div className='prizes_location column'>
-                         <Prizes/>
-                         <Location/>
+                        <Prizes/>
+                        <Location/>
                     </div>
                     <SchedulePanel/>
                 </div>
                 <div className='create_code row  '>
                     <span>Create Code, Empower Everyone</span>
                 </div>
-                
+                <Bitcoin/>
+                <Sponsors />
                 {
                     // <JudgesPanel/>
                     // <CriteriaPanel/>
