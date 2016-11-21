@@ -11,7 +11,11 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('*',function(req, res, next){
+    console.log('app.get(\'*\'');
 	fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
+        console.log('text');
+        console.log(text);
+        
 		res.send(text);
 	});
 });
