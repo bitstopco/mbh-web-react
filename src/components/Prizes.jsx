@@ -12,8 +12,24 @@ export default class Prizes extends Base {
     constructor(props) {
         super(props);
         this.state = {
-            currencies: [],
-            selectedCurrency: 'BTC'
+            currencies: [
+                {
+                    code: 'USD',
+                    symbol: '$',
+                    placement: 'before'
+                },
+                {
+                    code: 'EUR',
+                    symbol: '€',
+                    placement: 'before'
+                }
+            ],
+            selectedCurrency: {
+                code: 'USD',
+                symbol: '$',
+                placement: 'before'
+            },
+            conversionRate: 1
         }
     }
     componentWillMount() {
@@ -21,11 +37,20 @@ export default class Prizes extends Base {
         .then(data => {
             console.log('daata')
             console.log(data);
+            this.setState({ conversionRate: 750 });
         });
     }
     formatPrizeWithCurrency(prizeValue) {
-        // let currencyObject = currencies[this.state.selectedCurrency];
-        return prizeValue.prize + ' ' + this.state.selectedCurrency;
+        let { code, symbol, placement } = this.state.selectedCurrency;
+        let conversionRate = this.state.conversionRate;
+        let formattedCurrencyPrize;
+
+        console.log(prizeValue.prize * conversionRate)
+        if (placement == 'before')
+            formattedCurrencyPrize = symbol + '' + (prizeValue.prize * conversionRate);
+        else
+            formattedCurrencyPrize = (prizeValue.prize * conversionRate) + '' + symbol;
+        return formattedCurrencyPrize;
     }
     prizeDetails() {
         const details = [
@@ -63,7 +88,11 @@ export default class Prizes extends Base {
         return details.map((prize, index) => {
             let formattedPrize = this.formatPrizeWithCurrency(prize);
             return(
-                <PrizeTile formatted={formattedPrize} {...prize}/>
+                <PrizeTile
+                    currencies={this.state.currencies}
+                    formatted={formattedPrize}
+                    {...prize}
+                />
             );
         })
     }

@@ -1,5 +1,15 @@
 .Footer {
-
+    margin: 1rem 0;
+    .links-container {
+        .flex-center;
+        .row;
+        a {
+            padding: 1rem 2rem;
+            .register {
+                color: @pink;
+            }
+        }
+    }
     .icon-container {
         background-color: @blue;
         border-radius: 1000px;
@@ -11,11 +21,21 @@
 
 @media screen and (max-width: @sm) {
     .Footer {
+        .links-container {
+            .column;
+        }
         .RubyLink {
             .Button {
                 width: 8rem;
                 height: 4rem;
             }
+        }
+        .icon-container {
+            margin: 0 0.4rem;
+            padding: 0.85rem;
+        }
+        .extra {
+            padding: 1rem 0;
         }
     }
 }

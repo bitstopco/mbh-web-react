@@ -65,24 +65,29 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: @sm) {
 	.CriteriaPanel{
 		
-		height: 600px;
+		height: inherit;
 		.root_container{
-			
-			height: 95%;
+
+			height: inherit;
 			justify-content: space-between;
 			align-items: flex-start;
-
+			.header {
+				margin: 1rem 0;
+			}
 		}
 		.text_container{
 			flex-direction: column;
-			height: 500px;
+			height: inherit;
+			padding-bottom: 1rem;
 			.box{
 				width: 80%;
+				height: inherit;
 			}
 			.title{
+				height: inherit;
 				align-items: center;
 				justify-content: flex-start;
 			}

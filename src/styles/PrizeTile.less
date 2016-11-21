@@ -1,8 +1,9 @@
 .PrizeTile{
-	height: 45%;
+	height: 50%;
 	width: 33%;
 	justify-content: space-around;
 	align-items: center;
+	padding-bottom: 1rem;
 
 	.pic{
 		width: 70%;
@@ -30,25 +31,65 @@
 		margin: auto 1rem;
 		border-radius: 1000px;
 	}
+	.dropdown {
+		position: absolute;
+		bottom: 15px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		.transition(all, 0.5s);
+		height: 0px;
+		width: 50%;
+		z-index: 10;
+		.CurrencyItem {
+			margin-left: 8px;
+			cursor: pointer;
+			background-color: @blue;
+			color: @white;
+			p {
+				.flex-center;
+			}
+		}
+		.CurrencyItem:hover {
+			// background-color: @white;
+			color: @pink;
+		}
+		&.open {
+			height: 50px;
+		}
+	}
 }
 
-.PrizeTile:hover .pic{
-	background-size: 70%;
-	color: @pink;
-}
-.PrizeTile:hover .amount{
-	font-size: 21px;
-	color: @pink;
 
-}
-.PrizeTile:hover .styled-icon{
-	color: @pink;
+
+@media screen and (min-width: @sm) {
+	.PrizeTile:hover .pic{
+		background-size: 70%;
+		color: @pink;
+	}
+	.PrizeTile:hover .amount{
+		font-size: 21px;
+		color: @pink;
+	}
+	.PrizeTile:hover .styled-icon{
+		color: @pink;
+	}
 }
 
 @media screen and (max-width: @sm) {
 	.PrizeTile {
+		height: 55%;
+
 		.amount {
 			font-size: @defaultFontSize;
+		}
+		.buffer-icon {
+			margin: auto 0rem;
+		}
+		.styled-icon {
+			margin: auto 0.5rem;
+		}
+		.dropdown {
+			width: 75%;
 		}
 	}
 }

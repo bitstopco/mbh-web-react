@@ -8,31 +8,43 @@ import RubyLink from './RubyLink';
 export default class Footer extends Base{
     render(){
         return ( 
-            <div className='Footer row-nowrap'>
-                <RubyLink route='registration'>
-                    <Button>REGISTER</Button>
-                </RubyLink>
-                <div className='row flex-center'>
-                    
-                    <a href='https://www.youtube.com/channel/UCqM9ETKAa0Eaf6HjwU-3Dxg'>
-                        <div className='icon-container flex'>
-                            <FaYoutube size='24'/>
-                        </div>
-                    </a>
-                    <a href='https://www.facebook.com/miamibitcoinhackathon/'>
-                        <div className='icon-container flex'>
-                            <FaFacebook size='24'/>
-                        </div>
-                    </a>
+            <div className='Footer column'>
 
-                    <a href='https://twitter.com/miabitcoinhack'>
-                        <div className='icon-container flex'>
-                            <FaTwitter size='24'/>
-                        </div>
-                    </a>
+                <div className='row-nowrap'>
+                    <div className='links-container'>    
 
+                        <RubyLink route='signin'>
+                            <p>Sign in</p>
+                        </RubyLink>
+                        <RubyLink route='registration'>
+                            <p className='register'>Register</p>
+                        </RubyLink>
+                    </div>
                     
+                    <div className='row flex-center'>
+                        
+                        <a href='https://www.youtube.com/channel/UCqM9ETKAa0Eaf6HjwU-3Dxg'>
+                            <div className='icon-container flex'>
+                                <FaYoutube size='18'/>
+                            </div>
+                        </a>
+                        <a href='https://www.facebook.com/miamibitcoinhackathon/'>
+                            <div className='icon-container flex'>
+                                <FaFacebook size='18'/>
+                            </div>
+                        </a>
+
+                        <a href='https://twitter.com/miabitcoinhack'>
+                            <div className='icon-container flex'>
+                                <FaTwitter size='18'/>
+                            </div>
+                        </a>
+
+                        
+                    </div>
                 </div>
+                
+                
                 
             </div>
         );

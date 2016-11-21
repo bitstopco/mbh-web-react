@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Element, Events, animateScroll, scroller, scrollSpy } from 'react-scroll';
 
 import Base from './Base';
 import CodeWindowOverlay from './CodeWindowOverlay';
@@ -14,13 +15,29 @@ import CountDown from './CountDown';
 import Bitcoin from './Bitcoin';
 import Sponsors from './Sponsors';
 import Resources from './Resources';
+import FaqPanel from './FaqPanel';
 import Footer from './Footer';
 
 export default class LandingPage extends Base{
+    componentDidMount() {
+        Events.scrollEvent.register('begin', function(to, element) {
+              console.log("begin", arguments);
+            });
+
+            Events.scrollEvent.register('end', function(to, element) {
+              console.log("end", arguments);
+            });
+
+            scrollSpy.update();
+    }
+    handleLearnMoreScroll() {
+        console.log('handleLearnMoreScroll')
+        animateScroll.scrollToBottom();
+    }
 	render() {
 		return ( 
 			<div className='LandingPage column'>
-                <NavHeader/>
+                <NavHeader handleLearnMoreScroll={this.handleLearnMoreScroll}/>
                 <div className='landing_splash'/>
                 <CodeWindowOverlay/>
 
@@ -33,24 +50,24 @@ export default class LandingPage extends Base{
                     </div>
                     <SchedulePanel/>
                 </div>
-                <div className='create_code row  '>
+                <div className='create_code row'>
                     <h5>Create Code, Empower Everyone</h5>
                 </div>
-                <div className='why_resources_container'>
-                    <Bitcoin/>
-                    <div className='bitcoin_box'/>
-                    <h1 className='bitcon_container'>Codezz</h1>
-                    <Resources/>
-                </div>
+                <Element name='learn_more_anchor'>
+                    <div className='why_resources_container'>
+                        <Bitcoin/>
+                        <div className='bitcoin_box'/>
+                        <h1 className='bitcon_container'>Codezz</h1>
+                        <Resources/>
+                    </div>
+                </Element>
+                
                 
                 <Sponsors />
                 <CriteriaPanel/>
                 <JudgesPanel/>
-                {
-                    // 
-                    
-                    // <RecapPanel/>   
-                }
+                <FaqPanel/>
+
                 <Footer/>
                
             </div>

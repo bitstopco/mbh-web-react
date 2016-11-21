@@ -13,7 +13,9 @@ export default class JudgeTile extends Base{
     	console.log(this.props)
         return ( 
             <div className='JudgesTiles row'>
-                <div className='photo_container'/>
+                <div className='photo_container'>
+                    <img src={this.props.imageUrl}/>
+                </div>
                 <div className='info_container column'>
 
                 	<p className='position'>{this.props.position}</p>
@@ -22,8 +24,7 @@ export default class JudgeTile extends Base{
                 		<span className='bar'/>
                 	</div>
                 	<p className='bio'>{this.props.bio}</p>
-                	
-                	<p className='company'>{this.props.company}</p>
+                
                 </div>
             </div>
         );

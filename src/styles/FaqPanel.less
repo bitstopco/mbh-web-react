@@ -1,0 +1,69 @@
+.FaqPanel {
+    padding-bottom: 3rem;
+    .faq-section {
+        background-color: @blue;
+        padding: 2rem;
+        .HeaderText {
+            color: @white;
+        }
+    }
+    .faq {
+        color: @white;
+        margin: 1rem 0;
+        h6 {
+            color: @miamiBlue;
+            font-size: @defaultFontSize * 1.4;
+        }
+        p {
+            margin-left: 0.5rem;
+            font-size: @defaultFontSize * 1.1;
+            padding-right: 5rem;
+        }
+    }
+    .rules-section {
+        padding: 2rem 2rem 4rem;
+        border-bottom: 4px @pink solid;
+    }
+    .rules-container {
+
+        li {
+            margin: 0.5rem 0;
+            a {
+                color: @pink;
+            }
+        }
+    }
+    .decentralize_box{
+        position: absolute;
+        z-index: 10;
+        width: 100vw;
+        height: 50px;
+        bottom: 0px;
+        background-color: @pink;
+        opacity: .95;
+    }
+    h1.decentralize{
+        position: absolute;
+        height: 50px;
+        bottom: 40px;
+        left: 3rem;
+    }
+}
+
+@media screen and (max-width: @sm) {
+    .FaqPanel {
+        .faq {
+            p {
+                padding-right: inherit;
+            }
+        }
+        h1.decentralize{
+            font-size: @defaultFontSize * 2;
+            left: 50%;
+            transform: translate(-50%, 8%);
+        }
+        .rules-section {
+            padding: 0.5rem 1rem 2rem 0.5rem;
+        }
+    }
+}
