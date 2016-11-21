@@ -14,6 +14,7 @@ import CountDown from './CountDown';
 import Bitcoin from './Bitcoin';
 import Sponsors from './Sponsors';
 import Resources from './Resources';
+import Footer from './Footer';
 
 export default class LandingPage extends Base{
 	render() {
@@ -50,6 +51,7 @@ export default class LandingPage extends Base{
                     
                     // <RecapPanel/>   
                 }
+                <Footer/>
                
             </div>
 		);

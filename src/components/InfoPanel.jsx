@@ -21,7 +21,7 @@ export default class InfoPanel extends Base{
                 <div className='global_box'/>
                 <h1 className='global'>GLOBAL</h1>
                 <div className='video_container'>
-                    <iframe id='video' src="https://www.youtube.com/embed/-l9TvM7cuJg" frameBorder="0" allowFullScreen/>
+                    <iframe id='video' src="https://www.youtube.com/embed/ZaQaC_hnWWg" frameBorder="0" allowFullScreen/>
                     <div className='video_title'>
                     	<h5 className='recap'>2016 Recap</h5>
                     	<span className='bar'/>

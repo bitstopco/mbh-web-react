@@ -47,7 +47,7 @@ export default class JudgesPanel extends Base{
 	}
     render(){
         return ( 
-            <div className='JudgesPanel row'>
+            <div className='JudgesPanel row-nowrap'>
                 {this.Panel()}
             </div>
         );
