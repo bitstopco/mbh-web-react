@@ -25,7 +25,7 @@ export default class LandingPage extends Base{
 
                 <InfoPanel/>
                 <CountDown/>
-                <div className='row'>
+                <div className='details-container'>
                     <div className='prizes_location column'>
                         <Prizes/>
                         <Location/>
@@ -33,10 +33,12 @@ export default class LandingPage extends Base{
                     <SchedulePanel/>
                 </div>
                 <div className='create_code row  '>
-                    <span>Create Code, Empower Everyone</span>
+                    <h5>Create Code, Empower Everyone</h5>
                 </div>
-                <div className='row'>
+                <div className='why_resources_container'>
                     <Bitcoin/>
+                    <div className='bitcoin_box'/>
+                    <h1 className='bitcon_container'>Codezz</h1>
                     <Resources/>
                 </div>
                 

@@ -7,32 +7,28 @@
 
 
 	.container{
-		
-		height: 86%;
-		width: 100%;
-		align-items:flex-start;
-		justify-content: flex-end;
+		.flex;
+		padding: 1rem 2rem;
 	}
 	.title{
-		
-		p{
-			font-size:40px;
-			margin-bottom: 2vh;
+		h5{
+			padding: 1rem;
 		}
 	}
 
-	.bar{
-		width: 220px;
-		transition: width .2s ease,background-color .2s ease;
-        height:4px; 
-        background-color: @miamiBlue;
-        position: absolute;
-	}
+
+		.bar{
+			transition: width .2s ease,background-color .2s ease;
+	        height:4px;
+	        background-color:  @miamiBlue;
+	        .flex;
+	        width: 12.5rem;
+	        margin-left: 1rem;
+		}
 
 	.resources_container{
-		margin-top: 50px;
+		margin-top: 1rem;
 		
-		width: 90%;
 		height: 60%;
 		align-items: center;
 		justify-content: center;
@@ -74,13 +70,14 @@
 			
 		}
 		.blockChain{
+			border-bottom: 2px solid @pink;
+
 			.icon{
 				
 				background-image: url('https://s3.amazonaws.com/stredm/namecheap/blockChain3.png');
 			}
 			p{
 				color: @darkGray;
-				font-size: 20px;
 			}
 		}
 		.examples{
@@ -96,7 +93,6 @@
 			
 		}
 		.news{
-			border-top: 2px solid @pink;
 			.icon{
 				
 				background-image: url('https://s3.amazonaws.com/stredm/namecheap/newsIcon.png');
@@ -106,9 +102,70 @@
 			}
 		}
 	}
+
 }
 
 .Resources:hover .bar{
 	background-color: #5c18fc;
 	width: 240px;
+	li {
+		.transition(all, 0.5s);
+	}
+	li:hover {
+		color: @pink;
+	}
+}
+
+@media screen and (max-width: @sm) {
+	.Resources {
+		width: 100%;
+		padding: 0 1.5rem 5rem;
+		height: inherit;
+		.resources_container {
+			opacity: 1;
+			.transition(all, 0.5s);
+			.title{
+				.column;
+				margin-bottom: inherit;
+				padding: 1rem 0;
+				p {
+					font-size: @defaultFontSize;
+				}
+			}
+		}
+		
+		.container {
+			width: inherit;
+			height: inherit;
+			padding: 0;
+		}
+		.description{
+			p{
+				width: inherit;
+			}
+		}
+		ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			height: 80%;
+			width: 100%;
+			margin: 2rem 0 0;
+			padding-left: 1.5rem;
+			transform-style: preserve-3d;
+			.transition(all, 0.5s);
+			font-size: @defaultFontSize * .9;
+			pointer-events: none;
+		}
+		.title.active {
+			opacity: 0;
+		}
+		ul.active {
+			opacity: 1;
+			pointer-events: all;
+			transform-style: preserve-3d;
+			transform: rotateY(360deg);
+		}
+	}
 }

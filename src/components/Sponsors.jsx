@@ -65,7 +65,7 @@ export default class Sponsors extends Base{
         return ( 
             <div className='Sponsors column'>
                  <div className='title column'>	
-             		<p>Sponsors & Partners</p>
+             		<h6>Sponsors & Partners</h6>
              		<span className='bar'/>
                 </div>
                 <div className='sponsors_container row'>

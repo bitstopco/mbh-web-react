@@ -1,15 +1,14 @@
 .LandingPage {
 	
 	width: 100%;
-	
-	justify-content: flex-start;
+
 
     .landing_splash {
         position: absolute;
         z-index: -10;
         width: 100%;
-        height: 60vh;
-        background-size: auto 60vh;
+        height: 700px;
+        background-size: 100%;
         background-image: url('https://s3.amazonaws.com/stredm/namecheap/mainHeroBG.png');
         background-repeat: no-repeat;
     }
@@ -26,19 +25,55 @@
     	width: 100%;
     	height: 110px;
 
-    	span{
+    	h5{
     		color: white;
-    		font-size: 35px;
+            font-size: @defaultFontSize;
+            font-family: 'Fira Mono', monospace;
     	}
+    }
+    .details-container {
+        .row;
+    }
+    .why_resources_container {
+        .row;
+        .bitcoin_box{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            height: 1rem;
+            bottom: 0px;
+            left: 0;
+            background-color: #7cfde7;
+            opacity: .95;
+        }
+        h1.bitcon_container{
+            position: absolute;
+            bottom: -10px;
+            left: 3.5rem;
+            z-index: 1
+        }
     }
 
 }
 
-@media screen and (min-width: @sm) {
+@media screen and (max-width: @sm) {
     .LandingPage {
         .landing_splash{
-            height: 700px;
-            background-size: 100%;
+            height: 60vh;
+            background-size: auto 60vh;
+        }
+        .details-container {
+            .column;
+            .prizes_location {
+                width: 100%;
+            }
+        }
+        .why_resources_container {
+            .column;
+            h1.bitcon_container{
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
         }
     }
 }

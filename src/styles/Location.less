@@ -26,8 +26,10 @@
 	.loc{
 		justify-content: space-around;
 		align-items: center;
+		.row;
 
 		.location_text{
+			.column;
 			width: 30%;
 			height: 120px;
 			justify-content: space-between;
@@ -41,6 +43,7 @@
 			height: 120px;
 		}
 	}
+
 	
 }
 
@@ -49,3 +52,38 @@
 	width: 220px;
 }
 
+
+
+
+@media screen and (max-width: @sm) {
+	.Location {
+		height: inherit;
+		padding: 1.5rem 2rem;
+		.title_text{
+			height: inherit;
+			padding: 2rem 0;
+			.title {
+			}
+			.bar {
+				margin-top: 0.75rem;
+			}
+		}
+		.loc{
+			.column;
+			.location_text{
+				height: inherit;
+				width: inherit;
+				.row-nowrap;
+				p {
+					margin: 0 1rem;
+				}
+			}
+			.map{
+				padding: 1.5rem 0;
+				height: inherit;
+				width: 100%;
+			}
+		}
+	}
+
+}
