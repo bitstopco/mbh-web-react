@@ -1,7 +1,7 @@
 .InfoPanel{
-	height: 700px;
 	position: relative;
-	
+	.column;
+
 	background-color: #fafafa;
 	width: 100%;
 	justify-content: space-around;
@@ -18,11 +18,7 @@
 		justify-content: center;
 	}
 	.info_text{
-		align-self: flex-end;
-		height: 90%;
-		width: 40%;
-		justify-content: space-between;
-		align-items: flex-start;
+		
 
 		p{
 			justify-content: flex-start;
@@ -86,4 +82,18 @@
 			width: 270px;
 		}
 	}
+}
+
+@media screen and (min-width: @sm) {
+    .InfoPanel {
+    	.row!important;
+    	.info_text{
+    		align-self: flex-end;
+    		height: 90%;
+    		width: 40%;
+    		justify-content: space-between;
+    		align-items: flex-start;
+    	}
+    }
+
 }

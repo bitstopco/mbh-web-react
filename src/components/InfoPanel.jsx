@@ -6,7 +6,7 @@ import Base from './Base';
 export default class InfoPanel extends Base{
     render(){
         return ( 
-            <div className='InfoPanel row'>
+            <div className='InfoPanel'>
                  <div className='info_text column'>
                  	<div className='title'>	
                  		<p>Loren</p>
