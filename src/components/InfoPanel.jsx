@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Base from './Base';
-
+import RubyLink from './RubyLink';
 
 export default class InfoPanel extends Base{
     render(){
@@ -13,7 +13,9 @@ export default class InfoPanel extends Base{
                  		<span className='bar'/>
                  	</div>
                  	<p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vengiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Deus ute irure dolor in reprehenderit in </p>
-                 	<button>Register</button>
+                    <RubyLink route='registration'>
+                        <button>REGISTER</button>
+                    </RubyLink>
                     
                 </div>
                 <div className='global_box'/>
