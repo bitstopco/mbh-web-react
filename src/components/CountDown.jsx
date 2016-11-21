@@ -23,7 +23,6 @@ export default class CountDown extends Base{
         clearInterval(this.interval);
     }
     tick() {
-        console.log('tick');
 
         this.setState({ secondsRemaining: this.state.secondsRemaining - 1 });
         if (this.state.secondsRemaining <= 0) {
@@ -31,7 +30,6 @@ export default class CountDown extends Base{
         }
     }
 	render() {
-        console.log(this.state.secondsRemaining)
 
         let timeUntil = moment.duration(this.state.secondsRemaining * 1000);
         let days = Math.floor(timeUntil.asDays());
