@@ -30,7 +30,7 @@ export default class LandingPage extends Base{
                     <SchedulePanel/>
                 </div>
                 <div className='create_code row  '>
-                    <span>Create Code, Empower Others</span>
+                    <span>Create Code, Empower Everyone</span>
                 </div>
                 
                 {

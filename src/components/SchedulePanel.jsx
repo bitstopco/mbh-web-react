@@ -46,7 +46,7 @@ export default class SchedulePanel extends Base{
                 	    	<p className='blue_text'>11:30AM</p>
                 	    	<p>Presentations</p>
                 	    	<p className='blue_text'>1:00PM</p>
-                	    	<p>Jusdging & Awards</p>
+                	    	<p>Judging & Awards</p>
 
                 		</div>
                 	</div>
