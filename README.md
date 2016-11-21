@@ -1,6 +1,6 @@
-# SetLife
+# MBH 2017 Wite
 
-SetOceans's React app boiler plate repo
+Made from React app boiler plate repo
 
 Libaries used: Express, React, Redux, React Router, Webpack
 
