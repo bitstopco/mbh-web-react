@@ -14,8 +14,8 @@ export default class Location extends Base {
               			  <p className='title'>Location</p>
               			  <div className='bar'/>
               		</div>
-              		<div className='loc row'>
-              			<div className='column location_text'>
+              		<div className='loc'>
+              			<div className='location_text'>
               				<p className='bold'>LAB MIAMI</p>
               				<p>400 NW 26th Street Miami, FL 33127 United States</p>
               			</div>

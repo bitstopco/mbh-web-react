@@ -1,62 +1,55 @@
 .Bitcoin{
 	width: 50%;
-	height: 700px;
 	background-color: #efefef;
 	justify-content: flex-end;
 	align-items: center;
 
 	.container{
-		height: 85%;
-		width: 70%;
-		align-items:flex-start;
-		justify-content: flex-start;
+		.flex;
+		padding: 1rem 2rem;
+
 	}
 
 	.title{
-		margin-bottom: 5vh;
-		p{
-			font-size:40px;
+		h5{
+			padding: 1rem;
 		}
 	}
 
 	.bar{
-		width: 220px;
-		bottom: -15px;
-        height:4px; 
+        height:4px;
         background-color: #7cfde7;
-        position: relative;
+        .flex;
+        width: 12.5rem;
+        margin-left: 1rem;
 	}
 
-	
-
-		
 		.description{
 			p{
-				width: 80%;
+				padding: 1.5rem;
 			}
 		}
-		.bitcon_container{
-			position: relative;
-			align-self: flex-start;
-			width: 500px;
-			height: 50px;
-			
+		
+}
 
-			.bitcoin_box{
-				position: relative;
-				z-index: 10;
-				width: 100%;
-				height: 100%;
-				background-color: #7cfde7;
-				opacity: .95;
-			}
-			h1{
-				top: -28px;
-				right: 60px;
-				position: absolute;
-				font-size: 100px;
+@media screen and (max-width: @sm) {
+	.Bitcoin {
+		width: 100%;
+		padding: 0 1.5rem;
+		height: inherit;
+		.title{
+			margin-bottom: inherit;
+			padding: 1rem 0;
+		}
+		.container {
+			width: inherit;
+			height: inherit;
+			padding: 0;
+		}
+		.description{
+			p{
+				width: inherit;
 			}
 		}
-	
-	
+	}
 }

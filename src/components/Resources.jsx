@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 import Base from './Base';
@@ -10,10 +8,10 @@ export default class Resources extends Base{
 		return ( 
 			<div className='Resources column'>
                 <div className='container'>
-                	<div className='title'>	
-                 		<p className=''>Resources</p>
-                 		<span className='bar'/>
-                 	</div>
+                	<div className='title'> 
+                        <h5 className='flex'>Resources</h5>
+                        <div className='bar'/>
+                    </div>
                  	<div className=' resources_container row'>
                  		<div className='api tile column'>
                  			<div className='row title'>
