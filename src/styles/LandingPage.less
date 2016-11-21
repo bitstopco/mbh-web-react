@@ -1,15 +1,14 @@
 .LandingPage {
 	
 	width: 100%;
-	
-	justify-content: flex-start;
+
 
     .landing_splash {
         position: absolute;
         z-index: -10;
         width: 100%;
-        height: 60vh;
-        background-size: auto 60vh;
+        height: 700px;
+        background-size: 100%;
         background-image: url('https://s3.amazonaws.com/stredm/namecheap/mainHeroBG.png');
         background-repeat: no-repeat;
     }
@@ -31,14 +30,23 @@
     		font-size: 35px;
     	}
     }
+    .details-container {
+        .row;
+    }
 
 }
 
-@media screen and (min-width: @sm) {
+@media screen and (max-width: @sm) {
     .LandingPage {
         .landing_splash{
-            height: 700px;
-            background-size: 100%;
+            height: 60vh;
+            background-size: auto 60vh;
+        }
+        .details-container {
+            .column;
+            .prizes_location {
+                width: 100%;
+            }
         }
     }
 }

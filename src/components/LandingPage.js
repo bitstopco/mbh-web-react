@@ -24,7 +24,7 @@ export default class LandingPage extends Base{
 
                 <InfoPanel/>
                 <CountDown/>
-                <div className='row'>
+                <div className='details-container'>
                     <div className='prizes_location column'>
                         <Prizes/>
                         <Location/>
