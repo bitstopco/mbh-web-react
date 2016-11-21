@@ -1,16 +1,32 @@
 .CodeWindowOverlay {
     position: relative;
-    z-index: 10;
-   	top: 80px;
-   	
-   	left: 200px;
-    border-radius: 8px;
-    height: 456px;
-    width: 888px;
-    background-size: 93%;
-    background-repeat: no-repeat;
-    background-image: url('https://s3.amazonaws.com/stredm/namecheap/textEditor.png');
-    background-position: bottom;
+    .column;
+    .image {
+        .flex-center;
+        z-index: 10;
+        top: 2rem;
+        border-radius: 8px;
+        min-height: 35%;
+        width: 100vw;
+        background-size: 93%;
+        background-repeat: no-repeat;
+        background-image: url('https://s3.amazonaws.com/stredm/namecheap/textEditor.png');
+        background-position: top;
+    }
+    
+}
 
+@media screen and (min-width: @sm) {
+    .CodeWindowOverlay {
+        height: 456px;
+        .image {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
 
+            height: 456px;
+            width: 888px;
+            background-position: bottom;
+        }
+    }
 }
