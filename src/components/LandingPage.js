@@ -13,6 +13,7 @@ import Location from './Location';
 import CountDown from './CountDown';
 import Bitcoin from './Bitcoin';
 import Sponsors from './Sponsors';
+import Resources from './Resources';
 
 export default class LandingPage extends Base{
 	render() {
@@ -34,7 +35,11 @@ export default class LandingPage extends Base{
                 <div className='create_code row  '>
                     <span>Create Code, Empower Everyone</span>
                 </div>
-                <Bitcoin/>
+                <div className='row'>
+                    <Bitcoin/>
+                    <Resources/>
+                </div>
+                
                 <Sponsors />
                 <CriteriaPanel/>
                 {

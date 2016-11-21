@@ -13,9 +13,13 @@ export default class SponsorsTile extends Base{
             backgroundImage: `url('${this.props.pic}')`
         };
         return ( 
-            <a href={this.props.url} className='SponsorsTile column'>
-                <div className='tile_photo' style={imageStyle}/>
-            </a>
+            <a 
+            	href={this.props.url} 
+            	className={`SponsorsTile  ${this.props.name}`}
+            	style={imageStyle}
+            />
+               
+            
         );
     }
     
