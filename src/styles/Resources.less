@@ -1,0 +1,109 @@
+.Resources{
+	
+	width: 50%;
+	background-color: #efefef;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+
+	.container{
+		
+		height: 86%;
+		width: 100%;
+		align-items:flex-start;
+		justify-content: flex-end;
+	}
+	.title{
+		
+		p{
+			font-size:40px;
+			margin-bottom: 2vh;
+		}
+	}
+
+	.bar{
+		width: 220px;
+		
+        height:4px; 
+        background-color: #7cfde7;
+        position: absolute;
+	}
+
+	.resources_container{
+		margin-top: 50px;
+		
+		width: 90%;
+		height: 60%;
+		align-items: center;
+		justify-content: center;
+
+		.tile{
+			width: 50%;
+			height: 50%;
+		}
+
+		.title{
+			
+			align-items: center;
+			justify-content: flex-start;
+
+			.icon{
+				width: 100px;
+				height: 100px;
+				background-size: 50%;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			p{
+				margin: 0;
+				font-size: 30px;
+			}
+		}
+		
+		.api{
+			border-bottom: 2px solid @pink;
+			border-right: 2px solid @pink;
+
+			.icon{
+				background-size: 70%;
+				background-image: url('https://s3.amazonaws.com/stredm/namecheap/apiIcon.png');
+			}
+			p{
+				color: @miamiBlue;
+			}
+			
+		}
+		.blockChain{
+			.icon{
+				
+				background-image: url('https://s3.amazonaws.com/stredm/namecheap/blockChain3.png');
+			}
+			p{
+				color: @darkGray;
+				font-size: 20px;
+			}
+		}
+		.examples{
+			border-right: 2px solid @pink;
+		
+			.icon{
+				
+				background-image: url('https://s3.amazonaws.com/stredm/namecheap/example.png');
+			}
+			p{
+				color: @pink;
+			}
+			
+		}
+		.news{
+			border-top: 2px solid @pink;
+			.icon{
+				
+				background-image: url('https://s3.amazonaws.com/stredm/namecheap/newsIcon.png');
+			}
+			p{
+				color: @darkerBlue;
+			}
+		}
+	}
+}
