@@ -16,9 +16,11 @@
 		}
 	}
 
+
 		.bar{
+			transition: width .2s ease,background-color .2s ease;
 	        height:4px;
-	        background-color: #7cfde7;
+	        background-color:  @miamiBlue;
 	        .flex;
 	        width: 12.5rem;
 	        margin-left: 1rem;
@@ -100,6 +102,12 @@
 			}
 		}
 	}
+
+}
+
+.Resources:hover .bar{
+	background-color: #5c18fc;
+	width: 240px;
 	li {
 		.transition(all, 0.5s);
 	}

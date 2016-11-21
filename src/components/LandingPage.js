@@ -44,8 +44,9 @@ export default class LandingPage extends Base{
                 
                 <Sponsors />
                 <CriteriaPanel/>
+                <JudgesPanel/>
                 {
-                    // <JudgesPanel/>
+                    // 
                     
                     // <RecapPanel/>   
                 }

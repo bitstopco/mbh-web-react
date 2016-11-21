@@ -24,6 +24,7 @@ export default class Resources extends Base{
 		return ( 
 			<div className='Resources column'>
                 <div className='container'>
+
                 	<div className='title'> 
                         <h5 className='flex'>Resources</h5>
                         <div className='bar'/>
@@ -52,6 +53,7 @@ export default class Resources extends Base{
                                 </li>
                             </ul>
                  		</div>
+
                  		<div className='blockchain tile column' onClick={this.activate.bind(this, 'blockchain')}>
                  			<div className={'row title ' + (this.state.blockchain && 'active')}>
                  				<div className='icon'/>
@@ -72,6 +74,7 @@ export default class Resources extends Base{
                                 </li>
                             </ul>
                  		</div>
+
                  		<div className='examples tile column' onClick={this.activate.bind(this, 'examples')}>
                  			<div className={'row title ' + (this.state.examples && 'active')}>
                  				<div className='icon'/>

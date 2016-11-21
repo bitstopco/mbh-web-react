@@ -19,6 +19,7 @@
 	        height:4px; 
 	        background-color: #5c18fc;
 	        position: relative;
+	        transition: width .2s ease,background-color .2s ease;
 		}
 	}
 	
@@ -42,7 +43,17 @@
 			height: 120px;
 		}
 	}
+
+	
 }
+
+.Location:hover .bar{
+	background-color: @miamiBlue;
+	width: 220px;
+}
+
+
+
 
 @media screen and (max-width: @sm) {
 	.Location {
