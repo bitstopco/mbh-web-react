@@ -17,7 +17,7 @@ export default class PrizeTile extends Base {
             <div className='PrizeTile column'>
             	  <div className='pic' style={imageStyle}/>
             	  <p className='place'>{this.props.place}</p>
-            	  <p >{this.props.prize}</p>
+            	  <p className='amount'>{this.props.prize}</p>
             </div>   
           
         );

@@ -19,6 +19,7 @@
 	        height:4px; 
 	        background-color: #5c18fc;
 	        position: relative;
+	        transition: width .2s ease,background-color .2s ease;
 		}
 	}
 	
@@ -42,3 +43,9 @@
 	}
 	
 }
+
+.Location:hover .bar{
+	background-color: @miamiBlue;
+	width: 220px;
+}
+

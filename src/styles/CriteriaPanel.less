@@ -50,10 +50,15 @@
 			.bar{
 				width: 200px;
 		        height:5px; 
-		        background-color: @miamiBlue;
-		        
+		        background-color: @darkerBlue;
+		        transition: width .2s ease,background-color .2s ease;
+
 			}
 		}
-	}
+		.box:hover .bar{
+			width: 220px;
+			background-color: @miamiBlue;
+		}
+			}
 
-}
+		}

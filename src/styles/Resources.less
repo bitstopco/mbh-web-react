@@ -23,9 +23,9 @@
 
 	.bar{
 		width: 220px;
-		
+		transition: width .2s ease,background-color .2s ease;
         height:4px; 
-        background-color: #7cfde7;
+        background-color: @miamiBlue;
         position: absolute;
 	}
 
@@ -106,4 +106,9 @@
 			}
 		}
 	}
+}
+
+.Resources:hover .bar{
+	background-color: #5c18fc;
+	width: 240px;
 }
