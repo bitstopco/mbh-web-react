@@ -38,7 +38,7 @@ export default class LandingPage extends Base{
                 <div className='why_resources_container'>
                     <Bitcoin/>
                     <div className='bitcoin_box'/>
-                    <h1 className='bitcon_container'>Bitcoin</h1>
+                    <h1 className='bitcon_container'>Codezz</h1>
                     <Resources/>
                 </div>
                 
