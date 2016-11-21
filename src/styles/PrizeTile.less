@@ -1,6 +1,6 @@
 .PrizeTile{
 	height: 45%;
-	width: 30%;
+	width: 33%;
 	justify-content: space-around;
 	align-items: center;
 
@@ -19,11 +19,36 @@
 		font-size: 20px;
 		transition: font-size .2s ease;
 	}
+	.buffer-icon {
+		color: @transparent;
+		.flex-center;
+		margin: auto 1rem;
+	}
+	.styled-icon {
+		.flex-center;
+		cursor: pointer;
+		margin: auto 1rem;
+		border-radius: 1000px;
+	}
 }
 
 .PrizeTile:hover .pic{
 	background-size: 70%;
+	color: @pink;
 }
 .PrizeTile:hover .amount{
-	font-size: 25px;
+	font-size: 21px;
+	color: @pink;
+
+}
+.PrizeTile:hover .styled-icon{
+	color: @pink;
+}
+
+@media screen and (max-width: @sm) {
+	.PrizeTile {
+		.amount {
+			font-size: @defaultFontSize;
+		}
+	}
 }

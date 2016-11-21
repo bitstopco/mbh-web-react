@@ -10,7 +10,7 @@ export default class CriteriaPanel extends Base{
             	<div className='root_container column '>
             		<p className='header'>Criteria</p>
 
-	                <div className='text_container row'>
+	                <div className='text_container '>
 
 	                	<div  className='box column'>
 	                		<div className='title column'>	

@@ -1,13 +1,11 @@
 {
-  "name": "SetLife",
+  "name": "mbh-web-react",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --inline ",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "stop": "forever stopall;",
+    "start": "node server;",
     "deploy": "./node_modules/webpack/bin/webpack.js -p --config webpack.config.production.js"
   },
   "babel": {
@@ -28,16 +26,21 @@
   },
   "homepage": "https://github.com/brgarciarivas/SetLife#readme",
   "dependencies": {
+    "es6-promise": "^4.0.5",
+    "exports-loader": "^0.6.3",
     "express": "^4.14.0",
     "fs": "0.0.1-security",
+    "imports-loader": "^0.6.5",
     "lodash": "^4.16.4",
     "moment": "^2.15.1",
     "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-icons": "^2.2.1",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
+    "react-scroll": "^1.4.4",
     "redux": "^3.6.0",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0"

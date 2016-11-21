@@ -4,9 +4,9 @@ import {API_ROOT} from '../constants';
 export default {
     get(route, query) {
         return (
-            fetch(API_ROOT + route, {
+            fetch(route, {
                 method: 'GET',
-                crossDomain: true,
+                crossDomain: false,
                 xhrFields: {
                     withCredentials: true
                 },
@@ -16,16 +16,16 @@ export default {
                 },
                 data: JSON.stringify(query)
             })
+            .then(res => res.json())
             .then(res => {
-                console.log(res);
-                res.json();
+                return res;
             })
             .catch(err => console.error(err))
         )
     },
     post(route, data) {
         return (
-            fetch(API_ROOT + route, {
+            fetch(route, {
                 method: 'POST',
                 xhrFields: {
                     withCredentials: true
@@ -38,64 +38,6 @@ export default {
                 credentials: 'include'
             })
             .then(res => res.json())
-            .then(res => {
-                return res;
-            })
-            .catch(err => console.error(err))
-        )
-    },
-    graph(graphData) {
-        return (
-            fetch(API_ROOT + 'graph', {
-                method: 'POST',
-                xhrFields: {
-                    withCredentials: true
-                },
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(graphData),
-                credentials: 'include'
-            })
-            .then(res => res.json())
-            .then(payload => {
-                if (payload && payload.errors) {
-                    throw payload.errors; 
-                }
-                else if (payload && payload.data && payload.data != null) {
-                    return payload.data;
-                } else {
-                    throw 'network error';
-                }
-            })
-            .catch(err => console.error(err))
-        )
-    },
-    getExt(route, headers, query) {
-        return (
-            fetch(route, {
-                method: 'GET',
-                crossDomain: true,
-                headers: headers
-            })
-            .then(res => res.json())
-            .then(res => {
-                return res;
-            })
-            .catch(err => console.error(err))
-        )
-    },
-    postExt(route, headers, data) {
-        return (
-            fetch(route, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: data
-            })
             .then(res => {
                 return res;
             })

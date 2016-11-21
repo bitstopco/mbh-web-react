@@ -2,17 +2,18 @@
 	position: relative;
 	.column;
 
-	background-color: #fafafa;
+    background-color: @altWhite;
 	width: 100%;
 	justify-content: space-around;
 	align-items: center;
 	padding-bottom: 8rem;
-	.bar{
-        width: 100%;
-        margin: 0 30%;
-        height: 4px;
-        background-color: #7cfde7;
-	}
+   .bar{
+
+        height:4px;
+        background-color: @miamiBlue;
+        width: 15.5rem;
+        margin-left: 1rem;
+    }
 	p{
 		display: flex;
 		align-items: center;
@@ -66,7 +67,8 @@
 		width: 100%;
 		#video{
 			margin: 2rem;
-			height: auto;
+            width: 80vw;
+			height: 45vw;
 		}
 		.video_title {
 			width: 100%;
@@ -84,11 +86,19 @@
     	.info_text{
     		.row;
     		p.text {
-    			padding-right: 25vw;
+    			padding-right: 10vw;
     		}
+            .RubyLink {
+                margin: inherit;
+            }
     	}
     	.video_container {
     		.column;
+            width: 50vw;
+            #video {
+                width: 35vw;
+                height: 20vw;
+            }
     	}
     	h1.global{
     		position: absolute;
