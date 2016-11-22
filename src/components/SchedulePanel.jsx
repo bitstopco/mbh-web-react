@@ -9,7 +9,7 @@ export default class SchedulePanel extends Base{
             <div className='SchedulePanel column'>
                 <div className='day_one row'>
                 	<div className='text_container column'>
-                	    <p className='date'>Jan 22nd</p>
+                	    <p className='date'>Jan 13th</p>
                 	    <p className='day_title'>Day 1</p>
                 	    <p>@ Wynwood Warehouse Project</p>
                 	    <p className='blue_text'>7:30PM - 9:00PM</p>
@@ -19,7 +19,7 @@ export default class SchedulePanel extends Base{
                 <div className='row'>
                 	<div className='day_two column'>
                 		<div className='text_container column'>
-                			<p className='date'>Jan 23rd</p>
+                			<p className='date'>Jan 14th</p>
                 	    	<p className='day_title'>Day 2</p>
                 	    	<p>@ LAB Miami</p>
                 	    	<p className='blue_text'>6:30AM</p>
@@ -36,7 +36,7 @@ export default class SchedulePanel extends Base{
                 	</div>
                 	<div className='day_three column'>
                 		<div className='text_container column'>
-                			<p className='date'>Jan 24th</p>
+                			<p className='date'>Jan 15th</p>
                 	    	<p className='day_title'>Day 3</p>
                 	    	<p>@ LAB Miami</p>
                 	    	<p className='blue_text'>7:00AM</p>

@@ -34,7 +34,7 @@ export default class FaqPanel extends Base{
                         <ol>
                             <li>Participants must be 18 years of age or older unless accompanied by a legal guardian.</li>
                             <li>Eligible participants may participate individually or as a team up to a limit of 5 people per team. A team can be just one person or up to five people.</li>
-                            <li>Participants must register on www.MiamiBitcoinHackathon.com before January 22, 2017 9:00 a.m. Eastern Standard Time.</li>
+                            <li>Participants must register on www.MiamiBitcoinHackathon.com before January 13, 2017 9:00 a.m. Eastern Standard Time.</li>
                             <li>Submitted project must incorporate Bitcoin.</li>
                             <li>Each Participant is eligible to receive only one prize from Blockchain Beach, whether individually or as a group.</li>
                             <li>Winners must accept prizes in the form of bitcoin. Conversion rates will be Coinbase spot sell price at the time of transfer.</li>
