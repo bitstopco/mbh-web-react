@@ -12,7 +12,7 @@ export default class InfoPanel extends Base{
                  		<h5>Info</h5>
                  		<span className='bar'/>
                  	</div>
-                 	<p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vengiam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Deus ute irure dolor in reprehenderit in </p>
+                 	<p className='text'>For three straight years it has been our singular focus to throw the best hackathon in the Bitcoin space. We are excited as ever to kick-off The Miami Bitcoin Hackathon 2017. The Bitcoin ecosystem is starting to mature and it's easier than ever to build apps using Bitcoin. As the world struggles with currency wars and political turmoil, Bitcoin just keeps propelling forward with all time highs and a robust development community. We invite you to participate in an experience that will leave you with a new profound appreciation of the power of crypto currency. Join us as we continue the tradition of hacking software that will can change the world.</p>
                     <div className='register-buttons row'>
                         <RubyLink route='registration'>
                             <p>Participants</p>
