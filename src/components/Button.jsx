@@ -8,7 +8,7 @@ export default class Button extends Base {
     }
     render() {
         return (
-            <div className='Button column center' style={this.props.style}>
+            <div className='Button column' style={this.props.style} onClick={this.props.onClick}>
                 <p className='flex-center'>{this.props.children}</p>
             </div>
         );

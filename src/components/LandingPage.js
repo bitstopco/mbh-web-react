@@ -17,8 +17,16 @@ import Sponsors from './Sponsors';
 import Resources from './Resources';
 import FaqPanel from './FaqPanel';
 import Footer from './Footer';
+import RegisterOverlay from './RegisterOverlay';
 
 export default class LandingPage extends Base{
+    constructor(props) {
+        super(props);
+        this.autoBind('showOverlay', 'dismissOverlay');
+        this.state = {
+            showObserverRegistration: false
+        }
+    }
     componentDidMount() {
         Events.scrollEvent.register('begin', function(to, element) {
               console.log("begin", arguments);
@@ -34,14 +42,26 @@ export default class LandingPage extends Base{
         console.log('handleLearnMoreScroll')
         animateScroll.scrollToBottom();
     }
+    showOverlay() {
+        console.log('showOverlay')
+        this.setState({ showObserverRegistration: true });
+    }
+    dismissOverlay() {
+        console.log('dismissOverlay')
+        this.setState({ showObserverRegistration: false });
+    }
 	render() {
 		return ( 
 			<div className='LandingPage column'>
+                <RegisterOverlay
+                    hidden={!this.state.showObserverRegistration}
+                    dismissOverlay={this.dismissOverlay}
+                />
                 <NavHeader handleLearnMoreScroll={this.handleLearnMoreScroll}/>
                 <div className='landing_splash'/>
                 <CodeWindowOverlay/>
 
-                <InfoPanel/>
+                <InfoPanel handleObserverRegister={this.showOverlay}/>
                 <CountDown/>
                 <div className='details-container'>
                     <div className='prizes_location column'>

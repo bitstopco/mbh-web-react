@@ -15,7 +15,7 @@ export default class NavHeader extends Base{
                     <h1 className='title pink'>Hackathon</h1>
                 </div>
                 <div className='nav-buttons row'>
-                    <div className='learn column' onClick={this.props.handleLearnMoreScroll}>
+                    <div className='learn column hidden' onClick={this.props.handleLearnMoreScroll}>
                         <span>Learn More</span>
                         <span className='learn_bar'/>
                     </div>
