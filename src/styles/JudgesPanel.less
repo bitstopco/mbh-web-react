@@ -1,6 +1,12 @@
 .JudgesPanel{
+    .row-nowrap;
 	width:  100%;
 	justify-content: space-around;
 	align-items: center;
 	border-bottom: 8px solid @miamiBlue;
+}
+@media screen and (max-width: @sm) {
+    .JudgesPanel {
+        .column;
+    }
 }
