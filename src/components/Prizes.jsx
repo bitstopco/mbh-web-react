@@ -12,52 +12,33 @@ export default class Prizes extends Base {
     constructor(props) {
         super(props);
         this.state = {
-            currencies: [
-                {
-                    code: 'USD',
-                    symbol: '$',
-                    placement: 'before'
-                },
-                {
-                    code: 'EUR',
-                    symbol: '€',
-                    placement: 'before'
-                }
-            ],
-            selectedCurrency: {
-                code: 'USD',
+            currencies: [{
+                key: 'USD',
                 symbol: '$',
                 placement: 'before'
-            },
-            conversionRate: 1
+            }],
+            selectedCurrency: 0
         }
     }
     componentWillMount() {
-        api.get('https://pub.bitstop.co/mobile/currencies')
-        .then(data => {
-            console.log('daata')
-            console.log(data);
-            this.setState({ conversionRate: 750 });
-        });
-    }
-    formatPrizeWithCurrency(prizeValue) {
-        let { code, symbol, placement } = this.state.selectedCurrency;
-        let conversionRate = this.state.conversionRate;
-        let formattedCurrencyPrize;
-
-        console.log(prizeValue.prize * conversionRate)
-        if (placement == 'before')
-            formattedCurrencyPrize = symbol + '' + (prizeValue.prize * conversionRate);
-        else
-            formattedCurrencyPrize = (prizeValue.prize * conversionRate) + '' + symbol;
-        return formattedCurrencyPrize;
+        api.getExt('https://pub.bitstop.co/mobile/currencies')
+        .then(currencies => {
+            return currencies.map((c, i) => {
+                if (c.key == 'VEF') c.placement = 'after';
+                else c.placement = 'before';
+                return c;
+            })
+        })
+        .then(currencies => {
+            this.setState({ currencies: currencies });
+        })
     }
     prizeDetails() {
         const details = [
         {
         place: '1st',
         pic: 'https://s3.amazonaws.com/miamibitcoinhackathon/assets/lottery-2df7f5d39ec2c208febc2c728e98039c6c82b68651662137c69406531940ed6c.svg',
-        prize: 20,
+        prize: 15,
         },
         {
         place: '2nd',
@@ -67,7 +48,7 @@ export default class Prizes extends Base {
         {
         place: '3rd',
         pic: 'https://s3.amazonaws.com/miamibitcoinhackathon/assets/award73-f270adca6cd30abcbc06dd74f0465ec71ce5d24db2c36c5f32677a2298f94e73.svg',
-        prize: 3,
+        prize: 2,
         },
         {
         place: '4th',
@@ -86,11 +67,10 @@ export default class Prizes extends Base {
         }
         ]
         return details.map((prize, index) => {
-            let formattedPrize = this.formatPrizeWithCurrency(prize);
             return(
                 <PrizeTile
+                    key={'prize' + index}
                     currencies={this.state.currencies}
-                    formatted={formattedPrize}
                     {...prize}
                 />
             );

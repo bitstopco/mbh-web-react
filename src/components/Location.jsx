@@ -23,7 +23,7 @@ export default class Location extends Base {
       						      className='map'
       						      frameBorder="0" style={{border:0}}
       						      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCh2rmERyciscqDTzixsrq5vofpuWQ-lwg
-      						      &q=400+NW+26TH+St,Miami+FL" 
+      						      &q=400+NW+26TH+St,Miami+FL&zoom=6" 
       						      allowFullScreen
       					    >
 						</iframe>

@@ -15,7 +15,7 @@ export default class Sponsors extends Base{
             {
                 url: 'http://bitstop.co/',
                 pic: 'http://s3.amazonaws.com/miamibitcoinhackathon/assets/bitstop-972a58e049a548f687aa8501317c3329e4247a6789ced5ce7ed4be6494a3e112.png',
-                name: 'bistop'
+                name: 'bitstop'
             },
             {
                 url: 'http://www.thelabmiami.com/',

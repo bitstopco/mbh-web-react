@@ -17,7 +17,7 @@ export default class CriteriaPanel extends Base{
 			             		<p>Creativity</p>
 			             		<span className='bar'/>
 			                </div>
-			                <p className=''>Another bitcoin wallet may not add much wow factor for your team unless it has very uniqure features. How could bitcoin enchance pain points in gaming or paywalls</p>
+			                <p className=''>Another bitcoin wallet may not add much wow factor for your team without unique & innovative features. How could bitcoin reduce friction in gaming or paywalls?</p>
 	                	</div>
 	                	
 	                	<div className='box column'>
@@ -33,7 +33,7 @@ export default class CriteriaPanel extends Base{
 			             		<p>Execution</p>
 			             		<span className='bar'/>
 			                </div>
-			                <p className=''>The devil is in the details. Does the application work well? Does it provide a good experience to the user? How does UX feel or the GUI look?</p>
+			                <p className=''>The devil is in the details. Does the application work well? Does it provide a good experience to the user? Does the UX feel as good as the UI looks?</p>
 	                	</div>
 	                </div>
 
