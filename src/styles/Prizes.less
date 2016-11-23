@@ -2,9 +2,9 @@
 
 	background-color: #f6f6f6;
 	width: 95%;
-	height: 75%;
 	justify-content: center;
 	align-items: center;
+	padding: 1.5rem 0;
 
 	.title_text{
 		align-items: center;
@@ -24,14 +24,19 @@
 	}
 	.prize_details{
 		width: 90%;
-		height: 80%;
 		align-items: center;
 		justify-content: space-around;
 	}
 }
 
+@media screen and (min-width: @sm) {
 
-.Prizes:hover .bar{
-	background-color: @miamiBlue;
-	width: 220px;
+	.Prizes:hover .bar{
+		background-color: @miamiBlue;
+		width: 220px;
+	}
+}
+
+@media screen and (max-width: @sm) {
+	height: inherit;
 }

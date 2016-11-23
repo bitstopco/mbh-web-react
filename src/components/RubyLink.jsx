@@ -10,8 +10,6 @@ export default class RubyLink extends Base {
         super(props);
     }
     render() {
-        console.log(RUBY_ROOT + this.props.route)
-
         return (
             <div className='RubyLink row center'>
                 <a href={RUBY_ROOT + this.props.route}>{this.props.children}</a>

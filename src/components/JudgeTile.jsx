@@ -10,7 +10,6 @@ export default class JudgeTile extends Base{
 		super(props);
 	}
     render(){
-    	console.log(this.props)
         return ( 
             <div className='JudgesTiles row'>
                 <div className='photo_container'>

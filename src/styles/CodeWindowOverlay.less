@@ -1,16 +1,19 @@
 .CodeWindowOverlay {
     position: relative;
     .column;
+    padding: 2rem 5vw;
+
     .image {
         .flex-center;
         z-index: 10;
         top: 2rem;
         border-radius: 8px;
-        min-height: 35%;
-        width: 100vw;
-        background-size: 93%;
+        box-shadow: 0 0 13px 2px @blue;
+        height: 46.125vw;
+        width: 90vw;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url('https://s3.amazonaws.com/stredm/namecheap/textEditor.png');
+        background-image: url('https://s18.postimg.org/r0e7eilzt/Screen_Shot_2016_11_23_at_7_35_16_AM.png');
         background-position: top;
     }
     
@@ -18,14 +21,17 @@
 
 @media screen and (min-width: @sm) {
     .CodeWindowOverlay {
-        height: 456px;
+        padding: 2rem 15vw 0;
+        height: 35.875vw;
+
         .image {
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
+            height: 35.875vw;
 
-            height: 456px;
-            width: 888px;
+            width: 70vw;
+
             background-position: bottom;
         }
     }

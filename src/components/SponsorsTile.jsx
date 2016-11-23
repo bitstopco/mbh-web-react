@@ -8,7 +8,6 @@ export default class SponsorsTile extends Base{
 		super(props)
 	}
     render(){
-    	console.log(this.props)
     	const imageStyle = {
             backgroundImage: `url('${this.props.pic}')`
         };

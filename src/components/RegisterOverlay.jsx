@@ -11,23 +11,30 @@ export default class RegisterOverlay extends Base{
         super(props);
         this.autoBind('handleRegistration');
         this.state = {
-            name: 'Oscar',
-            email: 'oscar@setmusic.co',
-            error: null
+            name: '',
+            email: '',
+            error: ''
         };
     }
     handleRegistration() {
         console.log(this.state);
-        api.post('http://miamibitcoinhackathon.com/observers', {
-            'observer[email]': this.state.email,
-            'observer[name]': this.state.name
-        })
+        var postData = new FormData();
+        postData.append('observer[email]', this.state.email);
+        postData.append('observer[name]', this.state.name);
+
+        api.postExt('http://miamibitcoinhackathon.com/observers', postData)
         .then(data => {
             console.log('postdaata')
             console.log(data);
+            this.props.dismissOverlay();
         })
         .catch(err => {
+            console.log('err')
+
             console.log(err);
+            this.setState({
+                error: 'An error occurred. Please try again later.'
+            });
         })
     }
     render() {
@@ -47,6 +54,7 @@ export default class RegisterOverlay extends Base{
                             <input type='text' valueLink={link('email')}/>
                         </div>
                     </div>
+                    <div className='error'>{this.state.error}</div>
                     <div className='button-container row'>
                         <Button
                             style={{ backgroundColor: '#eeeeee' }}

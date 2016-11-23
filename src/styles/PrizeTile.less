@@ -30,13 +30,20 @@
 		cursor: pointer;
 		margin: auto 1rem;
 		border-radius: 1000px;
+		.transition(all, 0.5s);
+		&.flip {
+			transform: rotateZ(-180deg);
+			color: @pink;
+		}
 	}
 	.dropdown {
 		position: absolute;
-		bottom: 15px;
+		top: 95%;
 		left: 50%;
 		transform: translate(-50%, 0);
 		.transition(all, 0.5s);
+		max-height: 110px;
+		overflow-y: scroll;
 		height: 0px;
 		width: 50%;
 		z-index: 10;
@@ -53,8 +60,11 @@
 			// background-color: @white;
 			color: @pink;
 		}
+		.CurrencyItem.selected {
+			color: @pink;
+		}
 		&.open {
-			height: 50px;
+			height: 110px;
 		}
 	}
 }
@@ -78,6 +88,7 @@
 @media screen and (max-width: @sm) {
 	.PrizeTile {
 		height: 55%;
+		width: 50%;
 
 		.amount {
 			font-size: @defaultFontSize;
