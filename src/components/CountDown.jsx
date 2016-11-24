@@ -15,8 +15,7 @@ export default class CountDown extends Base{
         }
     }
     componentDidMount() {
-        console.log(moment('2017-01-22').diff(moment(), 'seconds'))
-        this.setState({ secondsRemaining: moment('2017-01-22').diff(moment(), 'seconds') });
+        this.setState({ secondsRemaining: moment('2017-01-13').diff(moment(), 'seconds') });
         this.interval = setInterval(this.tick, 1000);
     }
     componentWillUnmount() {

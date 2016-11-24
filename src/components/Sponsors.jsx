@@ -28,9 +28,9 @@ export default class Sponsors extends Base{
                 name: 'trezor'
             },
             {
-                url: 'https://www.ledgerwallet.com/',
-                pic: ' http://s3.amazonaws.com/miamibitcoinhackathon/assets/ledger-vert-logo-1048387edba10f81a2bb7a1b0cff15c8976a997aa0cf2a8438ff9bb30966bbb1.png',
-                name: 'ledge'
+                url: 'http://satoshilabs.com/',
+                pic: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Satoshilabs_logo.png/480px-Satoshilabs_logo.png',
+                name: 'satoshi'
             },
             {
                 url: 'https://www.breadwallet.com/',
