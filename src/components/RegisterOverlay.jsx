@@ -22,7 +22,7 @@ export default class RegisterOverlay extends Base{
         postData.append('observer[email]', this.state.email);
         postData.append('observer[name]', this.state.name);
 
-        api.postExt('http://miamibitcoinhackathon.com/observers', postData)
+        api.postExt('http://register.miamibitcoinhackathon.com/observers', postData)
         .then(data => {
             console.log('postdaata')
             console.log(data);

@@ -41,7 +41,7 @@ export default class FaqPanel extends Base{
                             <li>All submitted code must be created between the Twenty-eight (28) hour time period start and stop time. Any participant or team who uses code, which has been created before the hackathon start time will automatically be disqualified.</li>
                             <li>The team’s project must be hosted on Github in a public repo. Your team page must be updated with the repo’s url.</li>
                             <li>Participants can only contribute code toward their respective team and cannot share code, ideas or contribute code towards other teams.</li>
-                            <li>By submitting your code, you agree to the <a href='http://miamibitcoinhackathon.com/rules'>terms and conditions.</a></li>
+                            <li>By submitting your code, you agree to the <a href='http://register.miamibitcoinhackathon.com/rules'>terms and conditions.</a></li>
                             <li>Blockchain Beach registered agents, directors and officers at the time of this event cannot participate in this hackathon.</li>
                         </ol>
                     </div>
