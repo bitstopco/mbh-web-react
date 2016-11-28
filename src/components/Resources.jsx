@@ -40,7 +40,7 @@ export default class Resources extends Base{
                                     <a href='https://bitpay.com/api' target= '_blank'>Bitpay</a>
                                 </li>
                                 <li>
-                                    <a href='https://github.com/ledgerhq' target= '_blank'>Ledger</a>
+                                    <a href='https://github.com/satoshilabs' target= '_blank'>Satoshi Labs</a>
                                 </li>
                                 <li>
                                     <a href='https://github.com/bitpay/insight-ui' target= '_blank'>insight.is</a>
@@ -82,6 +82,7 @@ export default class Resources extends Base{
                  			</div>
                             <ul className={this.state.examples && 'active'}>
                                 <li><a href='http://setcoins.com' target= '_blank'>Setcoins</a></li>
+                                <li><a href='https://bitcore.io/playground' target= '_blank'>Bitcore Playground</a></li>
                             </ul>
                  		</div>
                  		<div className='news tile column' onClick={this.activate.bind(this, 'news')}>

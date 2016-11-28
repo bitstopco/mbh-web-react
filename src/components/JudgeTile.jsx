@@ -22,7 +22,10 @@ export default class JudgeTile extends Base{
                 		<p>{this.props.name}</p>
                 		<span className='bar'/>
                 	</div>
-                	<p className='bio'>{this.props.bio}</p>
+                	<p
+                        className='bio'
+                        dangerouslySetInnerHTML={{__html: this.props.bio}}
+                    />
                 
                 </div>
             </div>
