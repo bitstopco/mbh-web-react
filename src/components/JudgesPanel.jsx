@@ -10,7 +10,7 @@ export default class JudgesPanel extends Base{
 				name: 'Doug Carillo',
 				position: 'Co-Founder, Bitstop',
 				imageUrl: 'https://s15.postimg.org/y9rglamon/photo_1.jpg',
-				bio:'Product Architect at Bitstop.co Floridas largest Bitcoin ATM network.  He is responsible for making sure people have the smoothest experience when buying bitcoin with cash. He has been in the Bitcoin space since 2013 and has a passion for product development and software.  He is a seasoned entrepreunuer and leader who has led several businesses into 7 figure revenues. ',
+				bio:'Product Architect at <a href="https://bitstop.co">Bitstop.co</a>, Floridas first and largest Bitcoin ATM network. He is responsible for making sure people have the smoothest experience when buying bitcoin with cash. Doug has been involved in the Bitcoin space since 2013 and has a passion for product development and software. He\'s a seasoned entrepreunuer and leader who has co-founded several other multi-million dollar businesses. He enjoys working with developers and keeping up with the latest in Bitcoin protocol development.',
 				twitter: '',
 				linkedIn: ''
 			},
