@@ -41,7 +41,7 @@ export default class RegisterOverlay extends Base{
         let link = new ReactLink(this);
 
         return ( 
-            <div className={'RegisterOverlay column' + (this.props.hidden ? ' wtf' : '')}>
+            <div className={'RegisterOverlay column' + (this.props.hidden ? ' hide' : '')}>
                 <div className='window column'>
                     <h6>Observer Registration</h6>
                     <div className='field-container'>

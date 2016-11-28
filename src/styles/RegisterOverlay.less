@@ -5,10 +5,10 @@
     height: 100vh;
     width: 100vw;
     background-color: @grayTransparent;
-    z-index: 100;
+    z-index: 1000;
     opacity: 1;
     .transition(all, 0.3s);
-    &.wtf {
+    &.hide {
         pointer-events: none;
         background-color: @transparent;
         opacity: 0;
@@ -62,5 +62,13 @@
         span {
             .flex;
         }
+    }
+}
+.RegisterOverlay.hide {
+    pointer-events: none;
+    background-color: @transparent;
+    opacity: 0;
+    .window {
+        top: -100vh;
     }
 }
