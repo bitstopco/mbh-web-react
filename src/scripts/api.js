@@ -76,8 +76,8 @@ export default {
                 if (xhr.status === 200) {
                     console.log('success')
 
-                    console.log(xhr.responseText)
-                    resolve(JSON.parse(xhr.responseText))
+                    console.log(xhr)
+                    resolve(xhr.responseText)
                 }
                 else {
                     console.log('fail')
