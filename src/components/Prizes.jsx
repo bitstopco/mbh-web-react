@@ -39,6 +39,7 @@ export default class Prizes extends Base {
         place: '1st',
         pic: 'https://s3.amazonaws.com/miamibitcoinhackathon/assets/lottery-2df7f5d39ec2c208febc2c728e98039c6c82b68651662137c69406531940ed6c.svg',
         prize: 15,
+        extraPrize: '+ Tickets to the <a href="http://btcmiami.com/">North American Bitcoin Conference</a>'
         },
         {
         place: '2nd',
@@ -82,6 +83,7 @@ export default class Prizes extends Base {
                   <div className='column title_text'>
                       <p className='title'>Prizes</p>
                       <div className='bar'/>
+                      <span><a href='http://bitcointrezor.com/'>Trezors</a> for the whole team</span>
                   </div>
                   <div className='prize_details row'>
                      {this.prizeDetails()}

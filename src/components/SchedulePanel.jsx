@@ -7,6 +7,11 @@ export default class SchedulePanel extends Base{
     render(){
         return ( 
             <div className='SchedulePanel column'>
+                <div className='column title_text'>
+                    <p className='title'>Schedule</p>
+                    <div className='bar'/>
+                    <span>26 hours of hacking</span>
+                </div>
                 <div className='day_one row'>
                 	<div className='text_container column'>
                 	    <p className='date'>Jan 13th</p>
@@ -51,6 +56,7 @@ export default class SchedulePanel extends Base{
                 		</div>
                 	</div>
                 </div>
+                <div className='buffer'/>
             </div>
         );
     }

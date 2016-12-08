@@ -10,10 +10,14 @@ export default class JudgeTile extends Base{
 		super(props);
 	}
     render(){
+        const imageStyle = {
+            backgroundImage: `url('${this.props.imageUrl}')`
+        };
+
         return ( 
-            <div className='JudgesTiles row'>
+            <div className='JudgesTiles column'>
                 <div className='photo_container'>
-                    <img src={this.props.imageUrl}/>
+                    <div className='image' style={imageStyle}/>
                 </div>
                 <div className='info_container column'>
 

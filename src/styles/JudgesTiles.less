@@ -1,10 +1,15 @@
 .JudgesTiles{
+	width: 20%;
+	height: 100%;
 	.photo_container{
-		.column;
 		margin: 0 1rem;
-		img {
-			.flex-center;
-			height: 25rem;
+		width: 100%;
+		height: auto;
+		.image {
+			width: 20vw;
+			height: 20vw;
+			background-size: cover;
+			background-position: center;
 		}
 	}
 	.info_container{
@@ -14,6 +19,7 @@
 		align-items: flex-start;
 		left: 10px;
 		position: relative;
+		.flex;
 		
 	}
 	.position{
@@ -47,7 +53,20 @@
 @media screen and (max-width: @sm) {
     .JudgesTiles {
         .column;
+        width: 100%;
+        height: inherit;
+        .photo_container{
+        	margin: 0;
+        	.image {
+        		width: inherit;
+        		height: 20rem;
+        		background-size: cover;
+        		background-position: center;
+        	}
+        }
         .info_container{
+        	padding: 0 1.5rem;
+        	left: 0;
         	margin: 50px auto 0;
         }
     }

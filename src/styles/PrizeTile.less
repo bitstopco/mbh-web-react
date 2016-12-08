@@ -3,11 +3,10 @@
 	width: 33%;
 	justify-content: space-around;
 	align-items: center;
-	padding-bottom: 1rem;
 
 	.pic{
 		width: 70%;
-		height: 60%;
+		height: 12rem;
 		background-size: 60%;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -18,7 +17,17 @@
 	}
 	.amount{
 		font-size: 20px;
+		margin: auto;
 		transition: font-size .2s ease;
+	}
+	.extra {
+		font-size: 10px;
+		margin: auto;
+		text-align: center;
+		line-height: 18px;
+		a {
+			color: @pink;
+		}
 	}
 	.buffer-icon {
 		color: @transparent;
@@ -38,14 +47,14 @@
 	}
 	.dropdown {
 		position: absolute;
-		top: 95%;
+		top: 17rem;
 		left: 50%;
 		transform: translate(-50%, 0);
 		.transition(all, 0.5s);
 		max-height: 110px;
 		overflow-y: scroll;
 		height: 0px;
-		width: 50%;
+		width: 55%;
 		z-index: 10;
 		.CurrencyItem {
 			margin-left: 8px;
@@ -87,9 +96,14 @@
 
 @media screen and (max-width: @sm) {
 	.PrizeTile {
-		height: 55%;
+		height: 45%;
 		width: 50%;
-
+		.column;
+		.pic{
+			width: 50%;
+			height: 10rem;
+			background-size: contain;
+		}
 		.amount {
 			font-size: @defaultFontSize;
 		}
@@ -101,6 +115,11 @@
 		}
 		.dropdown {
 			width: 75%;
+			top: 15rem;
+		}
+		.extra {
+			height: 35px;
+			margin: auto;
 		}
 	}
 }

@@ -83,7 +83,7 @@ export default class PrizeTile extends Base {
             <div className='PrizeTile column'>
                 <div className='pic' style={imageStyle}/>
                 <p className='place'>{this.props.place}</p>
-                <div>
+                <div className='column'>
                     <p className='amount'>{this.props.prize + ' BTC'}</p>
                 </div>
                 <div className='currency row-nowrap'>
@@ -98,6 +98,15 @@ export default class PrizeTile extends Base {
                 <div className={'dropdown' + (this.state.dropdownOpen ? ' open' : '')}>
                     {this.state.dropdownOpen && options}
                 </div>
+                {this.props.extraPrize != null
+                    ?
+                        <p
+                            className='extra'
+                            dangerouslySetInnerHTML={{__html: this.props.extraPrize}}
+                        />
+                    :
+                        <p className='extra' />
+                }
             </div>   
           
         );

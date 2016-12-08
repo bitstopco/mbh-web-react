@@ -38,7 +38,7 @@ export default class FaqPanel extends Base{
                             <li>Submitted project must incorporate Bitcoin.</li>
                             <li>Each Participant is eligible to receive only one prize from Blockchain Beach, whether individually or as a group.</li>
                             <li>Winners must accept prizes in the form of bitcoin. Conversion rates will be Coinbase spot sell price at the time of transfer.</li>
-                            <li>All submitted code must be created between the Twenty-eight (28) hour time period start and stop time. Any participant or team who uses code, which has been created before the hackathon start time will automatically be disqualified.</li>
+                            <li>All submitted code must be created between the Twenty-six (26) hour time period start and stop time. Any participant or team who uses code, which has been created before the hackathon start time will automatically be disqualified.</li>
                             <li>The team’s project must be hosted on Github in a public repo. Your team page must be updated with the repo’s url.</li>
                             <li>Participants can only contribute code toward their respective team and cannot share code, ideas or contribute code towards other teams.</li>
                             <li>By submitting your code, you agree to the <a href='http://register.miamibitcoinhackathon.com/rules'>terms and conditions.</a></li>
