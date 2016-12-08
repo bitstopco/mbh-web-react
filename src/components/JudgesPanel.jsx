@@ -29,6 +29,14 @@ export default class JudgesPanel extends Base{
                 bio:'SVP of BitPagos, the leading bitcoin company in South America. Previous this role David has worked +10 years in the LatAm Fintech industry as the Chief Revenue Officer at Paymentez and as the Mexico General Manager of PayU (Sold to Nasper for $36MM). David has a vast experience in online payment technologies across emerging markets.',
                 twitter: '',
                 linkedIn: ''
+            },
+            {
+                name: 'Alena Vranova',
+                position: 'CEO, SatoshiLabs',
+                imageUrl: 'https://s28.postimg.org/dqu4sh7gt/alena.jpg',
+                bio:'As the Co-Founder and CEO of SatoshiLabs, Alena leads the business development for TREZOR, the hardware wallet. She has over 15 years experience in developing new business, including as Head of External Sales for Komercni Pojistovna, a Société Générale company and as Business Developer for two of the Czech Republic\'s largest financial advisory networks – INSIA and Renomia. </br></br> A polyglot who speaks seven languages, Alena graduated with a Master’s Degree in Marketing Communication and German from Comenius University Bratislava. She also completed Economic Diplomacy at the University College of International and Public Relations Prague focusing on international economy, global trade, monetary system and alternative currencies such as Bitcoin.',
+                twitter: '',
+                linkedIn: ''
             }
 		];
 		return judge.map((judge, index) => {
@@ -39,7 +47,7 @@ export default class JudgesPanel extends Base{
 	}
     render(){
         return ( 
-            <div className='JudgesPanel row-nowrap'>
+            <div className='JudgesPanel'>
                 {this.Panel()}
             </div>
         );
