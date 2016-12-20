@@ -11,7 +11,16 @@ export default class App extends Base {
     constructor(props) {
         super(props);
         // Bind custom component functions here that need to access the state
-        this.autoBind('customComponentFunction1', 'customComponentFunction1'); 
+        this.autoBind('customComponentFunction1', 'customComponentFunction1');
+        this.state = {
+            stylesApplied: false
+        }
+    }
+
+    componentDidMount() {
+        this.setState({
+            stylesApplied: true
+        });
     }
 
     customComponentFunction1() {
@@ -24,7 +33,7 @@ export default class App extends Base {
     render() {
         
         return (
-            <div className='app'>
+            <div className={'app' + (this.state.stylesApplied ? '' : ' not-ready')}>
                 {this.props.children}
             </div>
         )
