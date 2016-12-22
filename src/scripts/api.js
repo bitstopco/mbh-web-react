@@ -15,15 +15,9 @@ export default {
                 data: JSON.stringify(query)
             })
             .then(res => {
-                console.log('res');
-
-                console.log(res);
                 res.json();
             })
             .then(res => {
-                console.log('res');
-
-                console.log(res);
                 return res;
             })
             .catch(err => {
@@ -54,14 +48,9 @@ export default {
             xhr.open('GET', route);
             xhr.onload = function() {
                 if (xhr.status === 200) {
-                    console.log('success')
-
-                    console.log(xhr.responseText)
                     resolve(JSON.parse(xhr.responseText))
                 }
                 else {
-                    console.log('fail')
-                    console.log(xhr.status)
                     reject(xhr.status)
                 }
             };
@@ -74,14 +63,9 @@ export default {
             xhr.open('POST', route, true);
             xhr.onload = function() {
                 if (xhr.status === 200) {
-                    console.log('success')
-
-                    console.log(xhr)
                     resolve(xhr.responseText)
                 }
                 else {
-                    console.log('fail')
-                    console.log(xhr.status)
                     reject(xhr.status)
                 }
             };

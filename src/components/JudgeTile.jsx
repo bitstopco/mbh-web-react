@@ -23,7 +23,7 @@ export default class JudgeTile extends Base{
 
                 	<p className='position'>{this.props.position}</p>
                 	<div className='name'>
-                		<p>{this.props.name}</p>
+                		<p><a target='_blank' href={this.props.twitter}>{this.props.name}</a></p>
                 		<span className='bar'/>
                 	</div>
                 	<p

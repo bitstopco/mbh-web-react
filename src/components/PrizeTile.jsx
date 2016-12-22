@@ -37,7 +37,6 @@ export default class PrizeTile extends Base {
         let conversionRate = this.state.conversionRate;
         let formattedCurrencyPrize;
 
-        console.log(this.props.prize * conversionRate)
         if (placement == 'before')
             formattedCurrencyPrize = symbol + '' + (Math.round(this.props.prize * conversionRate));
         else
