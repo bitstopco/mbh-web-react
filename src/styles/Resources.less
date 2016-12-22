@@ -153,12 +153,9 @@
 			width: 100%;
 			margin: 2rem 0 0;
 			padding-left: 1.5rem;
-			transform-style: preserve-3d;
 			.transition(all, 0.5s);
 			font-size: @defaultFontSize * .9;
 			pointer-events: none;
-			-webkit-backface-visibility: hidden;
-			-webkit-transform: translateZ(0);
 		}
 		.title {
 			.transition(all, 0.5s);
@@ -170,8 +167,6 @@
 		ul.active {
 			opacity: 1;
 			pointer-events: all;
-			-webkit-transform: translateZ(0);
-			transform-style: preserve-3d;
 			transform: rotateY(360deg);
 		}
 	}
