@@ -37,6 +37,14 @@ export default class JudgesPanel extends Base{
                 bio:'As the Co-Founder and CEO of SatoshiLabs, Alena leads the business development for TREZOR, the hardware wallet. She has over 15 years experience in developing new business, including as Head of External Sales for Komercni Pojistovna, a Société Générale company and as Business Developer for two of the Czech Republic\'s largest financial advisory networks – INSIA and Renomia. </br></br> A polyglot who speaks seven languages, Alena graduated with a Master’s Degree in Marketing Communication and German from Comenius University Bratislava. She also completed Economic Diplomacy at the University College of International and Public Relations Prague focusing on international economy, global trade, monetary system and alternative currencies such as Bitcoin.',
                 twitter: '',
                 linkedIn: ''
+            },
+            {
+                name: 'Aaron Lasher',
+                position: 'CMO, Breadwallet',
+                imageUrl: 'https://s23.postimg.org/6eanw4tmz/photo249244906922551722.jpg',
+                bio:'Aaron is the Chief Marketing Officer and co-founder of the excellent and popular bitcoin wallet "bread" and Editor of  realvirtualcurrency.com. Aaron has visited over 70 countries and circumnavigated the globe by sailboat, but believes that no adventure compares to the bitcoin revolution. He is easy to find and impossible to shut up once the topic of bitcoin has been breached.',
+                twitter: '',
+                linkedIn: ''
             }
 		];
 		return judge.map((judge, index) => {

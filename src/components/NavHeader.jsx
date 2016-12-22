@@ -23,6 +23,9 @@ export default class NavHeader extends Base{
                         <Button>REGISTER</Button>
                     </RubyLink>
                 </div>
+                <RubyLink route='signin'>
+                    <Button>SIGN IN</Button>
+                </RubyLink>
                 
             </div>
         );
