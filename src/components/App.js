@@ -18,9 +18,7 @@ export default class App extends Base {
     }
 
     componentDidMount() {
-        this.setState({
-            stylesApplied: true
-        });
+        setTimeout(function() { this.setState({ stylesApplied: true }); }.bind(this), 2000);
     }
 
     customComponentFunction1() {
@@ -31,9 +29,10 @@ export default class App extends Base {
     }
    
     render() {
+        console.log('app render')
         
         return (
-            <div className={'app' + (this.state.stylesApplied ? '' : ' not-ready')}>
+            <div className={'app' + (this.state.stylesApplied ? ' ready' : '')}>
                 {this.props.children}
             </div>
         )
