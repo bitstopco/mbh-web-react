@@ -8,6 +8,11 @@ export default class Sponsors extends Base{
     sponsorTiles() {
         const sponsors = [
             {
+                url: 'https://www.knightfoundation.com/',
+                pic: ' http://s3.amazonaws.com/miamibitcoinhackathon/assets/sponsors/knight-076dc6e9d58216c3b5b38341978ad3cd950f42b545a705b37803762591a1c9b5.png',
+                name: 'knight'
+            },
+            {
                 url: 'http://bitstop.co/',
                 pic: 'http://s3.amazonaws.com/miamibitcoinhackathon/assets/sponsors/blockchain_beach-2b80d078a6b5647fa07f942aa3d8c3598dfb691de95f4e6148df121140b27271.png',
                 name: 'blockBeach'
@@ -38,19 +43,14 @@ export default class Sponsors extends Base{
                 name: 'bread'
             },
             {
-                url: 'https://www.pollotropical.com/',
-                pic: ' http://s3.amazonaws.com/miamibitcoinhackathon/assets/pollo-78f14761c43c9edbf0fbd4aeb7b5a31f3fd250f4bf3a3db2768b279aafe024dd.png',
-                name: 'pollo'
+                url: 'http://btcmiami.com/',
+                pic: 'https://s23.postimg.org/ompncdeij/tnabc.png',
+                name: 'nabitcoinconf'
             },
             {
-                url: 'https://www.knightfoundation.com/',
-                pic: ' http://s3.amazonaws.com/miamibitcoinhackathon/assets/sponsors/knight-076dc6e9d58216c3b5b38341978ad3cd950f42b545a705b37803762591a1c9b5.png',
-                name: 'knight'
-            },
-            {
-                url: 'https://www.kindsnacks.com/',
-                pic: 'http://s3.amazonaws.com/miamibitcoinhackathon/assets/kindbar-aa4a6cb9fa61c75d50b26ff6e5889c2ecd8b9555b0c9c5658c76f9653edd6532.png',
-                name: 'kind'
+                url: 'https://opendime.com/',
+                pic: 'https://s30.postimg.org/7300ayi0x/opendime_logo.png',
+                name: 'opendime'
             }
 
         ];

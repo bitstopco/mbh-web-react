@@ -16,9 +16,9 @@ export default class SchedulePanel extends Base{
                 	<div className='text_container column'>
                 	    <p className='date'>Jan 13th</p>
                 	    <p className='day_title'>Day 1</p>
-                	    <p>@ Wynwood Warehouse Project</p>
+                	    <p>@ LAB Miami</p>
                 	    <p className='blue_text'>7:30PM - 9:00PM</p>
-                	    <p>Networking with Meet & Greet</p>
+                	    <p>Keynote Speaker - <a target='_blank' href='https://twitter.com/ToneVays'>Tony Vays</a></p>
                 	</div>
                 </div>
                 <div className='row'>

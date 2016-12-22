@@ -35,10 +35,12 @@ a {
     font-family: Avenir;
     overflow-y: scroll;
     overflow-x: hidden;
+    opacity: 1;
+    .transition(opacity, 5s);
     -webkit-overflow-scrolling: touch;
 }
 .app.not-ready {
-    display: none!important; 
+    opacity: 0!important; 
 }
 
 article,
