@@ -83,7 +83,7 @@ export default class Prizes extends Base {
                   <div className='column title_text'>
                       <p className='title'>Prizes</p>
                       <div className='bar'/>
-                      <span><a target='_blank' href='http://bitcointrezor.com/'>Trezors</a> and <a target='_blank' href='https://opendime.com/'>Opendimes</a> for the whole team</span>
+                      <span><a target='_blank' href='http://bitcointrezor.com/'>Trezors</a> and <a target='_blank' href='https://opendime.com/'>Opendimes</a> for the top 3 teams</span>
                   </div>
                   <div className='prize_details row'>
                      {this.prizeDetails()}
