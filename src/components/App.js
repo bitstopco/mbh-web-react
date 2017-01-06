@@ -7,6 +7,8 @@ import _ from 'lodash'
 // app components
 import Base from './Base';
 
+// import css from '!css!less!../styles/index.less';
+
 export default class App extends Base {
     constructor(props) {
         super(props);
@@ -18,7 +20,9 @@ export default class App extends Base {
     }
 
     componentDidMount() {
-        setTimeout(function() { this.setState({ stylesApplied: true }); }.bind(this), 2000);
+        setTimeout(function() { 
+            this.setState({ stylesApplied: true });
+        }.bind(this), 5000);
     }
 
     customComponentFunction1() {
@@ -33,6 +37,7 @@ export default class App extends Base {
         
         return (
             <div className={'app' + (this.state.stylesApplied ? ' ready' : '')}>
+                
                 {this.props.children}
             </div>
         )
